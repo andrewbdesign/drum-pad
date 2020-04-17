@@ -143,7 +143,8 @@ const DrumPad = () => {
     return drumSounds.map((sound, i) => {
       return (
         <div key={i}>
-          <audio 
+          <audio
+            preload="auto"
             ref={el => audioElements.current[i] = el} 
             controls style={{ display: 'none' }}>
             <source src={sound.file} type="audio/wav" /> 
