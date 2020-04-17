@@ -1,0 +1,21 @@
+@import './typography';
+@import './colours';
+@import './drumpad';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('../assets/images/bg.jpeg');
+  background-size: cover;
+  background-position: 0% 100%;
+}

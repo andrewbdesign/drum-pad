@@ -1,0 +1,102 @@
+.drum-pad {
+  background: $lightBlack;
+  background: linear-gradient(0deg, $lightBlack 0%, $darkBlack 100%);
+  color: #fff;
+  height: 90vh;
+  width: 90%;
+  max-height: 800px;
+  max-width: 800px;
+  border-radius: 22px;
+  padding: 20px 40px 40px;
+  margin: auto;
+  border-bottom: 13px solid #1c1c1f;
+  box-shadow: 28px 19px 8px 14px rgba(0, 0, 0, 0.24);
+
+  
+}
+
+.instructions {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  h1 {
+    text-align: right;
+    margin-bottom: 20px;
+
+    span {
+      color: $red;
+    }
+  }
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  background: #33393c;
+  border-radius: 5px;
+  padding: 20px;
+  height: 90%;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  background: $darkBlack;
+  border: 4px solid $red;
+  border-radius: 6px;
+  color: #fff;
+  box-shadow: 13px 13px 24px -5px rgba(0, 0, 0, 0.75);
+  font-size: 20px;
+  position: relative;
+  transition: all .1s ease-out;
+  outline: none;
+  transform: scale(1);
+  cursor: pointer;
+  // top: 0;
+
+  &:hover {
+    background: lighten($darkBlack, 5%);
+  }
+
+  &:active,
+  &.active {
+    transform: scale(.97);
+    // top: 3px;
+    background: #fff;
+    border: 4px solid lighten($red, 20%);
+    box-shadow: 13px 13px 24px -5px rgba(0, 0, 0, 0.15);
+
+    span {
+      color: $darkBlack;
+    }
+
+    span.key {
+      background: $darkBlack;
+      color: #fff;
+    }
+  }
+
+  span {
+    position: absolute;
+    display: block;
+    font-size: 10px;
+  }
+
+  span.name {
+    font-size: 12px;
+    bottom: 5px;
+    left: 5px;
+  }
+  
+  span.key {
+    font-weight: bold;
+    bottom: 5px;
+    right: 5px;
+    background: #fff;
+    color: $darkBlack;
+    padding: 0px 10px;
+  }
+}
