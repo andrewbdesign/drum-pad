@@ -1,4 +1,4 @@
-# Rock, Paper, Scissors, Lizard, Spock!
+# Drum Pad
 Demo: [https://drumpad-andrewb.netlify.com](https://drumpad-andrewb.netlify.com)
 
 ![](images/screenshot.png)
